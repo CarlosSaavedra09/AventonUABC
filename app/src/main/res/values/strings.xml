@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AventonUABC</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo UABC</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Iniciar sesión</string>
+    <string name="error_invalid_email">Correo Inválido</string>
+    <string name="error_invalid_password">Esta contraseña es muy corta</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es requerido obligatoriamente</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="verSolicitud">Aventones</string>
+    <string name="status">Status</string>
+    <color name="uabc">#CEF6CE</color>
+</resources>
