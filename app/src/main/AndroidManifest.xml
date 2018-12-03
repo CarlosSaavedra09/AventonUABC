@@ -24,8 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChoferPrincipal" />
-        <activity android:name=".PasajeroPrincipal"/>
-        <activity android:name=".prueba"></activity>
+        <activity android:name=".prueba" />
+        <activity android:name=".PasajeroAlumnoActivity" />
+        <activity android:name=".AventonPasajeroActivity"></activity>
     </application>
 
 </manifest>

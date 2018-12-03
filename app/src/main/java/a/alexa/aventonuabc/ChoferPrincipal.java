@@ -34,7 +34,7 @@ public class ChoferPrincipal extends AppCompatActivity {
     }
 
     public void changeRol(){
-        Intent intent = new Intent(this, PasajeroPrincipal.class);
+        Intent intent = new Intent(this, PasajeroAlumnoActivity.class);
         startActivity(intent);
     }
 
