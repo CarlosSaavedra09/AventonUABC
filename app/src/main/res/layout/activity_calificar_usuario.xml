@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uabc"
+    tools:context=".CalificarUsuario">
+
+    <TextView
+        android:layout_above="@+id/feliz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Califica al usuario: CARLOS PARRA"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:id="@+id/feliz"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/feliz"
+        android:onClick="displayToastExcelente"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/neutro"
+        android:onClick="displayToastNeutro"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/triste"
+        android:onClick="displayToastSad"/>
+
+    <TextView
+        android:id="@+id/Comentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feliz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Comentarios:"/>
+    <EditText
+        android:id="@+id/ComentariosDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_below="@id/Comentarios"
+        android:maxLength="150"
+        />
+    
+    <Button
+        android:id="@+id/enviar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/uabc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/check"
+        android:text="Enviar"
+        android:onClick="calEnviada"/>
+
+    <Button
+        android:id="@+id/enviardenunciar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/uabc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/check"
+        android:text="Enviar y denunciar"
+        android:onClick="calEnviadaDenuncia"/>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PasajeroPrincipal"
+    android:background="@color/uabc">
+
+
+    <Button
+        android:id="@+id/switchuser"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/cambiorol"
+        android:text="@string/cambioRol"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="cambiorol"
+        />
+    <Button
+        android:id="@+id/verSolicitud"
+        android:layout_below="@+id/switchuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/solicitudes"
+        android:text="Solicitar aventón"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="solaventon"
+        />
+
+    <Button
+        android:id="@+id/viajeCurso"
+        android:layout_below="@+id/verSolicitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/car"
+        android:text="Aventón en curso"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="aventonCurso"
+        />
+
+
+    <Button
+        android:id="@+id/cerrarSesion"
+        android:layout_below="@id/viajeCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/active"
+        android:text="Cerrar Sesión"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="loginpage"/>
+
+    <ImageView
+        android:layout_below="@+id/cerrarSesion"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/currentlocation"
+        />
+</RelativeLayout>

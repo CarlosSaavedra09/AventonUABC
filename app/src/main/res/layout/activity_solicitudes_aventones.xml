@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudesAventones"
+    android:background="@color/uabc">
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/parra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/usuario"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="CARLOS PARRA"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="solicitudCarlos"/>
+    <Button
+        android:id="@+id/alexaPanico"
+        android:layout_below="@+id/parra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/female"
+        android:drawableRight="@drawable/warning"
+        android:text="ALEXA VILLEGAS"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="senalPanico"
+        />
+    <Button
+        android:id="@+id/nacho"
+        android:drawableLeft="@drawable/usuario"
+        android:layout_below="@+id/alexaPanico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="IGNACIO PALACIOS"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

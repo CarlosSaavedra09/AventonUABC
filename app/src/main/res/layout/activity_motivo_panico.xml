@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotivoPanico"
+    android:background="@color/uabc">
+
+
+    <TextView
+        android:id="@+id/solicitud"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escribe el motivo por la cual quieres emitir la señal de pánico:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/ComentariosDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_below="@id/solicitud"
+        android:maxLength="150"
+        />
+    <Button
+        android:id="@+id/Emitir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/check"
+        android:text="ENVIAR"
+        android:onClick="pasajeroPrincipal"
+        />
+
+
+
+
+</RelativeLayout>

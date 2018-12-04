@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AventonCurso"
+    android:background="@color/uabc">
+
+
+    <TextView
+        android:id="@+id/persona"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quien te esta dando el aventón es:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Velez"
+        android:layout_below="@+id/persona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="RICARDO VELEZ"
+        android:drawableLeft="@drawable/usuario"/>
+
+    <TextView
+        android:id="@+id/destino"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu destino es: UABC CAMPUS TIJUANA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/emergencia"
+        android:layout_below="@id/destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:drawableLeft="@drawable/ambulance"
+        android:text="BOTON DE EMERGENCIA"
+        android:onClick="displayToastEmergencia"
+        />
+
+    <Button
+        android:id="@+id/terminar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="TERMINAR AVENTON"
+        android:onClick="calificar"
+        />
+
+
+
+</RelativeLayout>

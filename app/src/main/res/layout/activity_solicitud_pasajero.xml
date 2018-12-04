@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudPasajero"
+    android:background="@color/uabc">
+
+
+    <TextView
+        android:id="@+id/solicitud"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta es tu solicitud:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Parra"
+        android:layout_below="@id/solicitud"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="CARLOS PARRA"
+        android:drawableLeft="@drawable/usuario"/>
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Parra"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:text="La dirección es: Avenida General Francisco Villa 13821, Lomas Taurinas"/>
+
+    <ImageView
+        android:id="@+id/ubicacion"
+        android:layout_below="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lomastaurinas"/>
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="ACEPTAR"
+        android:onClick="choferPrincipal"
+        />
+
+    <Button
+        android:id="@+id/rechazar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FFEE84"
+        android:text="RECHAZAR"
+        android:onClick="motivo"
+        />
+
+
+
+</RelativeLayout>

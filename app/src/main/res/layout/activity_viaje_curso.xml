@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViajeCurso"
+    android:background="@color/uabc">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llevas en tu aventón a:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Parra"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="CARLOS PARRA"
+        android:drawableLeft="@drawable/usuario"/>
+    <Button
+        android:id="@+id/nacho"
+        android:layout_below="@id/Parra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/usuario"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:backgroundTint="#FFEE84"
+        android:text="IGNACIO PALACIOS"
+        />
+    <Button
+        android:id="@+id/Alexa"
+        android:layout_below="@id/nacho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:drawableLeft="@drawable/female"
+        android:text="ALEXA VILLEGAS"
+        />
+
+    <TextView
+        android:id="@+id/destino"
+        android:layout_below="@+id/Alexa"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu destino es: UABC CAMPUS TIJUANA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/emergencia"
+        android:layout_below="@id/destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="EMERGENCIA"
+        android:onClick="displayToastEmergencia"
+        />
+
+    <Button
+        android:id="@+id/terminar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFEE84"
+        android:text="TERMINAR AVENTON"
+        android:onClick="calificar"
+        />
+
+
+
+</RelativeLayout>
