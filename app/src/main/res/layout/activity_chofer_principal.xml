@@ -8,45 +8,70 @@
     android:background="@color/uabc">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_marginTop="100dp"
-        android:layout_width="400dp"
-        android:layout_height="600dp"
-        android:src="@drawable/maps"
+    <Button
+        android:id="@+id/switchuser"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fef3f1"
+        android:backgroundTint="#899B36"
+        android:drawableLeft="@drawable/cambiorol"
+        android:text="@string/cambioRol"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="cambiorol"
+        />
+    <Button
+        android:id="@+id/verSolicitud"
+        android:layout_below="@+id/switchuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fef3f1"
+        android:backgroundTint="#899B36"
+        android:drawableLeft="@drawable/solicitudes"
+        android:text="@string/verSolicitud"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="solicitudes"
         />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="50px"
-        android:layout_marginTop="0dp"
-        android:text="Chofer" />
-
     <Button
-        android:layout_marginTop="20dp"
+        android:id="@+id/viajeCurso"
+        android:layout_below="@+id/verSolicitud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/status"
-        android:onClick="displayToastMsg"/>
+        android:textColor="#fef3f1"
+        android:backgroundTint="#899B36"
+        android:drawableLeft="@drawable/car"
+        android:text="@string/viaje"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="viajeCurso"
+        />
+
+
     <Button
-        android:layout_marginTop="60dp"
+        android:id="@+id/cerrarSesion"
+        android:layout_below="@id/viajeCurso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/verSolicitud"
-        android:onClick="displayToastSolicitud"/>
+        android:textColor="#fef3f1"
+        android:backgroundTint="#899B36"
+        android:drawableLeft="@drawable/active"
+        android:text="Cerrar Sesión"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:onClick="loginpage"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginTop="100dp"
-        android:text="pasajero" />
-
+    <ImageView
+        android:layout_below="@+id/cerrarSesion"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/currentlocation"
+        />
 </RelativeLayout>

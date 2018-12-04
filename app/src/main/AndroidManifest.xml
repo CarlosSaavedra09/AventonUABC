@@ -24,9 +24,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChoferPrincipal" />
-        <activity android:name=".prueba" />
-        <activity android:name=".PasajeroAlumnoActivity" />
-        <activity android:name=".AventonPasajeroActivity"></activity>
+        <activity android:name=".PasajeroPrincipal" />
+        <activity android:name=".SolicitudesAventones" />
+        <activity android:name=".CalificarUsuario" />
+        <activity android:name=".ViajeCurso" />
+        <activity android:name=".SolicitudPasajero" />
+        <activity android:name=".Motivo" />
+        <activity android:name=".SenalPanico" />
+        <activity android:name=".SolicitarAventon" />
+        <activity android:name=".MotivoPanico" />
+        <activity android:name=".AventonCurso" />
+        <activity android:name=".CalificaChofer"></activity>
     </application>
 
 </manifest>

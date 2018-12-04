@@ -15,5 +15,10 @@
     </string>
     <string name="verSolicitud">Aventones</string>
     <string name="status">Status</string>
+    <string name="panico">Señal de Pánico</string>
+    <string name="cambioRol">Cambiar de Rol</string>
+    <string name="viaje">Aventón en curso</string>
+    <string name="calificar">Calificar a usuario</string>
+    <string name="denunciar">Denunciar usuario</string>
     <color name="uabc">#CEF6CE</color>
 </resources>
